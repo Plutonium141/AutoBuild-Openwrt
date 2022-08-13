@@ -12,4 +12,4 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.3/g' package/base-files/files/bin/config_generate
-git clone https://github.com/S0SL/luci-lib-taskd package/lean
+git clone https://github.com/S0SL/luci-lib-taskd package/taskd
