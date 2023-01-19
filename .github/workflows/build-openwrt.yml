@@ -18,6 +18,10 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+      make:
+        description: 'MAKE type'
+        required: false
+        default: '0'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
