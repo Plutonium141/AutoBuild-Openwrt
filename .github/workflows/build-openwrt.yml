@@ -21,7 +21,15 @@ on:
       make:
         description: 'MAKE type(0:use make -j$(nproc),1:use make -j1,other:use make -j1 V=s)'
         required: false
-        default: '0'
+        default: "All"
+        type: choice
+        options:
+          - "All"
+          - action_required
+          - cancelled
+          - failure
+          - skipped
+          - success
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
